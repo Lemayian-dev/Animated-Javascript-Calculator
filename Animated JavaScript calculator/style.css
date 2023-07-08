@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+/* My social Icons links */
+.social-icons {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+    letter-spacing: 50px;
+    font-size: 30px;
+  }
+
+
+  /* calculator heading styling */
+h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 30px;
+    animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.calContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto repeat(4, 1fr);
+    gap: 5px;
+    background-color: rgb(189, 139, 32);
+    box-shadow: 0px 0px 50px rgb(40, 67, 223);
+    animation: test 12s ease-in-out infinite;
+  }
+  
+  @keyframes test {
+    25% {
+        background-color: #7d21c9;
+    }
+    50% {
+        background-color: #023d02;
+        
+    }
+    75% {
+        background-color: aqua;
+    }
+    100% {
+        background-color: rgb(14, 30, 121);
+    }
+    
+  }
+  .calContainer:hover {
+    box-shadow: 0px 0px 100px rgb(40, 223, 86);
+
+  }
+  .calContainer input[type="text"] {
+    grid-column: 1 / -1;
+    height: 80px;
+    text-align: right;
+    padding: 5px;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font: 900;
+    border-bottom: 1px solid rgb(0, 0, 0) ;
+  }
+
+  
+.calContainer .numbers {
+    cursor: pointer;
+    color: white;
+    margin: 5px 4px 5px 4px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 2px;
+    font: 900;
+    border: none;
+    background-color: #21c921;
+
+}
+
+
+  /* operators styling  */
+ .calContainer .operators {
+    cursor: pointer;
+    color: white;
+    margin: 5px 4px 5px 4px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    border-radius: 2px;
+    border: none;
+    background-color: #2148c9;
+
+ }
+  .calContainer .equals {
+    cursor: pointer;
+    margin: 5px 4px 5px 4px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    background-color: #2148c9;
+  }
+  .calContainer .clear {
+    margin: 5px 4px 5px 4px ;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 2px;
+    border: none;
+    background-color: #d41515;
+  }
+  
+  /* my github link */
+.github-link {
+    text-align: center;
+    padding-bottom: 100px;
+    position: relative;
+    top: 80%;
+    font-size: 30px;
+}
+
+.github-link a {
+    text-decoration: none;
+    color: rgb(46, 221, 46);
+}
+
+.github-link a:hover {
+    color: rgb(41, 41, 233);
+}
+
+
+/* code for small devices like phones and tablets */
+
+@media (max-width: 768px) {
+    .calContainer {
+        
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+        height: 450px;
+       
+      }
+
+      .github-link {
+        text-align: center;
+        padding-bottom: 100px;
+        position: relative;
+        top: 80%;
+        font-size: 20px;
+    }
+
+    .social-icons a {
+        display: inline-block;
+        margin-right: 10px;
+        color: #333;
+        letter-spacing: 50px;
+        font-size: 20px;
+      }
+      h1 {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 30px;
+  
+    }
+}

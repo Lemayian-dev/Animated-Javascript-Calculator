@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dbfb834a5c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section >
+       
+        <div class="social-icons">
+            <a href="https://github.com/Lemayian-dev/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+          </div>
+          
+   
+          
+        <h1>Javascript calculator</h1>
+        <!-- js code for the calculator -->
+        <div class="calContainer">
+
+            <!-- input field  -->
+            <input type="text" id="display" disabled>
+
+            <!-- numbers together with onlick event and functions -->
+            <div class="numbers" onclick="updateDisplay('1')">1</div>
+            <div class="numbers" onclick="updateDisplay('2')">2</div>
+            <div class="numbers" onclick="updateDisplay('3')">3</div>
+            <div class="numbers" onclick="updateDisplay('4')">4</div>
+            <div class="numbers" onclick="updateDisplay('5')">5</div>
+            <div class="numbers" onclick="updateDisplay('6')">6</div>
+            <div class="numbers" onclick="updateDisplay('7')">7</div>
+            <div class="numbers" onclick="updateDisplay('8')">8</div>
+            <div class="numbers" onclick="updateDisplay('9')">9</div>
+           
+            <!-- Mathematical operators including 0 -->
+            <div class="numbers" onclick="updateDisplay('0')">0</div>
+            <div class="clear" onclick="clearDisplay()">C</div>
+
+            <div class="operators" onclick="updateDisplay('+')">+</div>
+            <div class="operators" onclick="updateDisplay('-')">-</div>
+            <div class="operators" onclick="updateDisplay('*')">*</div>
+            <div class="operators" onclick="updateDisplay('/')">/</div>
+            <div class="equals" onclick="calculate()">=</div>
+
+          </div>
+          <div class="github-link">Developed by <a href="https://github.com/Lemayian-dev/" target="_blank">Isaac Lemayian</a></div>
+
+    </section>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
